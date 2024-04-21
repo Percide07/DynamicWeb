@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../styles/style_stdash.css">
+</head>
+<body>
+
+<h2>Afficher</h2>
+
+<table id="dataTable">
+    <tr>
+        <th>Nom</th>
+        <th>Date de création </th>
+        <th>Difficulté</th>
+        <th>Validé</th>
+    </tr>
+    <tr>
+        <td>Karim</td>
+        <td>15/03/2024</td>
+        <td><img src="/images/see.png" alt="" style="width: 15px; height: 15px;"></td>
+        <td><img src="/images/close.png" alt="" style="width: 15px; height: 15px;"></td>
+        <td><img src="/images/edit_blue.png" alt="" style="width: 15px; height: 15px;" class="editBtn"></td>
+        <td><img src="/images/bin.png" alt="" style="width: 20px; height: 20px;"></td>
+    </tr>
+    <tr>
+        <td>Karim</td>
+        <td>15/03/2024</td>
+        <td><img src="/images/see.png" alt="" style="width: 15px; height: 15px;"></td>
+        <td><img src="/images/check.png" alt="" style="width: 15px; height: 15px;"></td>
+        <td><img src="/images/edit.png" alt="" style="width: 15px; height: 15px;" class="editBtn"></td>
+        <td><img src="/images/delete.png" alt="" style="width: 15px; height: 15px;"></td>
+    </tr>
+</table>
+<img src="/images/plus.png" alt="" style="width: 15px; height: 15px;" id="openModalBtn">
+<!-- Modal pour ajouter  -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Ajouter</h1>
+        <form id="addForm">
+            <label for="formateur">Formateur:</label>
+            <select name="formateur" id="formateur">
+                <option value="M. Abdelaziz">M. Abdelaziz</option>
+                <option value="M. Ayman">M. Ayman</option>
+                <option value="Mme Salma">Mme Salma</option>
+                <option value="Mme Souad">Mme Souad</option>
+            </select>
+            <label for="bootcamp">Bootcamp:</label>
+            <select name="bootcamp" id="bootcamp">
+                <option value="MERN Stack">MERN Stack</option>
+                <option value="MEAN Stack">MEAN Stack</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+            </select>
+            <label for="titre">Titre:</label>
+            <input type="text" id="titre" name="titre">
+            <label for="brief">Brief:</label>
+            <input type="text" id="brief" name="brief">
+            <label for="difficulte">Difficulté rencontrée:</label>
+            <input type="text" id="difficulte" name="difficulte">
+            <input type="submit" value="Ajouter">
+        </form>
+    </div>
+</div>
+<!-- Modal pour modifier  -->
+<div id="editModal" class="modal">
+    <div class="modal-content">
+        <span class="closeEdit">&times;</span>
+        <h1>Modifier</h1>
+        <form id="editForm">
+            <label for="editTitre">Titre:</label>
+            <input type="text" id="editTitre" name="editTitre">
+            <label for="editBrief">Brief:</label>
+            <input type="text" id="editBrief" name="editBrief">
+            <label for="editDifficulte">Difficulté rencontrée:</label>
+            <input type="text" id="editDifficulte" name="editDifficulte">
+            <input type="submit" value="Modifier">
+        </form>
+    </div>
+</div>
+<script src="/data/add_modal.js">
+</script>
+<script src="/data/modify_modal.js">
+</script>
+</body>
+</html>

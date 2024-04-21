@@ -1,0 +1,39 @@
+Conception et Développement :
+
+1. Création des Maquettes Responsive:
+   - Concevoir des maquettes responsive en se basant sur la charte graphique et les wireframes fournis.
+
+2. Développement Frontend :
+   - Utiliser HTML5, CSS3 et JavaScript (DOM) pour rendre le site web dynamique et interactif.
+
+3. Mise en Place de la Gestion des Blocages :
+   - Implémenter les fonctionnalités permettant aux étudiants d'ajouter, modifier et supprimer leurs 
+blocages, en spécifiant le titre, le brief et la difficulté rencontrée.
+
+4. Consultation des Blocages par le Formateur :
+   - Permettre au formateur de consulter la liste des blocages classés chronologiquement pour un suivi efficace.
+
+5. Validation des Blocages par le Formateur :
+   - Intégrer la fonctionnalité permettant au formateur de valider les blocages surmontés par les étudiants, en spécifiant les modalités de résolution des difficultés.
+
+6. Modalités de Résolution des Difficultés :
+   - Mettre en place les options pour encadrer les recherches de solutions, l'aide entre pairs et l'intervention directe du formateur.
+
+Fonctionnalités Techniques :
+
+7. Validation des Champs des Formulaires :
+   - Assurer la validation des champs des formulaires pour garantir des données correctes et cohérentes.
+
+8. Sauvegarde des Données Localement :
+   - Mettre en place un mécanisme de sauvegarde des données localement pour assurer la persistance des informations des blocages.
+
+9. Rendu Responsive avec CSS :
+   - Utiliser CSS pour rendre le site responsive, assurant une expérience utilisateur optimale sur différents appareils et tailles d'écrans.
+
+ Gestion et Suivi :
+
+10. Planification et Suivi sur Trello :
+    - Organiser les tâches sur Trello pour une gestion efficace du projet et un suivi des avancées.
+
+11. Présentation et Soutenance :
+    - Préparer une présentation détaillée du projet et organiser une soutenance pour présenter les fonctionnalités développées.

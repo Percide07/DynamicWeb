@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../styles/style_stdash.css">
+
+</head>
+<body>
+
+<h2>Afficher</h2>
+
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Date de création </th>
+        <th>Difficulté</th>
+        <th>Validé</th>
+    </tr>
+    <tr>
+        <td>Karim</td>
+        <td>15/03/2024</td>
+        <td><img src="/images/see.png" alt="" style="width: 15px; height: 15px;"></td>
+        <td><img src="/images/close.png" alt="" style="width: 15px; height: 15px;"></td>
+        <td><img src="/images/chat.png" alt="" style="width: 15px; height: 15px;" id="openModalBtn"></td>
+
+    </tr>
+    <tr>
+        <td>Karim</td>
+        <td>15/03/2024</td>
+        <td><img src="/images/see.png" alt="" style="width: 15px; height: 15px;"></td>
+        <td><img src="/images/check.png" alt="" style="width: 15px; height: 15px;" ></td>
+        <td><img src="/images/chat.png" alt="" style="width: 15px; height: 15px;" id="openModalBtn"></td>
+    </tr>
+</table>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Choisir une option :</h2>
+        <div>
+            <input type="radio" id="huey" name="drone" value="huey" checked />
+            <label for="huey">Encadré dans leurs recherches de solutions</label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Itaque dignissimos, dolorem numquam asperiores vitae quos <br>
+                explicabo labore quas nam soluta nemo fugiat, fugit nulla nesciunt provident? <br>
+                Consectetur accusamus quasi autem!</p>
+        </div>
+        <div>
+            <input type="radio" id="dewey" name="drone" value="dewey" />
+            <label for="dewey">Aidé par leurs pairs</label>
+        </div>
+        <div>
+            <input type="radio" id="louie" name="drone" value="louie" />
+            <label for="louie">Intervention directe de formateur</label>
+        </div>
+        <button id="validerBtn">Valider</button>
+    </div>
+</div>
+
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("openModalBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
